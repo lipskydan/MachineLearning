@@ -8,7 +8,7 @@ from plottingDecisionRegions import plot_decision_regions
 
 def main():
     """Read dataset of iris from iris.data"""
-    df = pd.read_csv('iris.data', header=None)
+    df = pd.read_csv('../iris.data', header=None)
     df.tail()
 
     """Select first 100 elements from dataset
