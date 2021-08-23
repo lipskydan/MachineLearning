@@ -33,18 +33,8 @@ class Perceptron(object):
     def fit(self, X, y):
         """Fit training data.
 
-        Parameters
-        ----------
         X : {array-like}, shape = [n_samples, n_features]
-          Training vectors, where n_samples is the number of samples and
-          n_features is the number of features.
         y : array-like, shape = [n_samples]
-          Target values.
-
-        Returns
-        -------
-        self : object
-
         """
         rgen = np.random.RandomState(self.random_state)
         self.w_ = rgen.normal(loc=0.0, scale=0.01, size=1 + X.shape[1])
